@@ -22,6 +22,7 @@
   "deploy": {
     "production": {
       "user": "root",
+      "port":39999,
       "host": [
         "60.205.219.20"
       ],
