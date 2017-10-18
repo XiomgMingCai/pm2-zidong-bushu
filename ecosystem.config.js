@@ -42,7 +42,8 @@ module.exports = {
       repo : 'git@github.com:XiomgMingCai/pm2-zidong-bushu.git',
         // Github上的仓库地址
       path : '/root/server/production', // 应用部署到服务器的路径
-      'post-deploy' : 'npm install && pm2 reload ecosystem.config.js --env production'   // 在服务器上执行的脚本命令，会在从Github上获取到最新的版本后执行
+      // 在服务器上执行的脚本命令，会在从Github上获取到最新的版本后执行
+      'post-deploy' : 'npm install && pm2 reload ecosystem.config.js --env production'
     },
     dev : {
       user : 'node',
