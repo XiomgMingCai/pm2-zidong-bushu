@@ -27,7 +27,7 @@ module.exports = {
   ],
 
   /**
-   * Deployment section 部署部分
+   * Deployment sectiCon 部署部分
    * http://pm2.keymetrics.io/docs/usage/deployment/
    */
   deploy : {
