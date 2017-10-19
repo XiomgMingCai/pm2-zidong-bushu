@@ -36,7 +36,7 @@ module.exports = {
       // 这里没有提供密码，也就是为什么要配置ssh免密码登录
       user : 'root',    // 服务器用户名
       port:39999,
-      ssh_options: "StrictHostKeyChecking=no",
+      ssh_options: ["StrictHostKeyChecking=no", "PasswordAuthentication=no"],
       host : '60.205.219.20',    // 服务器地址
       // 服务器（Server）需要获取GitHub上的仓库
       // 所以要配置Deploy Keys
