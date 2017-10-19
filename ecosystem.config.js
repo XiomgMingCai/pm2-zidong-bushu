@@ -39,9 +39,9 @@ module.exports = {
       // 服务器（Server）需要获取GitHub上的仓库
       // 所以要配置Deploy Keys
       ref  : 'origin/master',   // 仓库名称，没有更改过的话默认即可
+      // Github上的仓库地址
       repo : 'git@github.com:XiomgMingCai/pm2-zidong-bushu.git',
-        // Github上的仓库地址
-      path : '/root', // 应用部署到服务器的路径
+      path : '/root/www/pm2-zidong-bushu', // 应用部署到服务器的路径
       // 在服务器上执行的脚本命令，会在从Github上获取到最新的版本后执行
       'post-deploy' : 'npm install && pm2 reload ecosystem.config.js --env production'
     },
