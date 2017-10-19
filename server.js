@@ -12,3 +12,4 @@ const server = http.createServer((req, res) => {
 server.listen(port, hostname, () => {
     console.log(`Server running at http://${hostname}:${port}/`);
 });
+//ssh-copy-id -i ~/.ssh/id_rsa.pub root@60.205.219.20
